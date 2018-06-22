@@ -1,0 +1,23 @@
+Algorithm IsNumberPrime
+    var Number: numToCheck, remainder
+    var Number: counter <- 2    //The counter is started at 2 as a prime number is a number that can be divided by one and itself
+    var Boolean: isNumPrime <- true   //Simple hack to stop if a number is not prime as we loop
+    
+    read (numToCheck)
+    
+    while ((counter < numToCheck) ^ isNumPrime)
+        remainder <- numToCheck mod counter
+        if (remainder = 0) then
+            isNumPrime <- false
+            exit while
+        end if
+        counter <- counter + 1
+    end while
+    
+    if (isNumPrime) then
+        print("the number is prime")
+    else
+        print("the number is not prime")
+    end if
+    
+End Algorithm
