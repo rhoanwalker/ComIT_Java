@@ -1,3 +1,21 @@
+/*
+	Filename: 	C09_P04.java - Class 9, Practice 4
+	Developer:	Rhoan Walker
+	Date:		July 4, 2018
+	Description:	There are three question in the exercise. A menu option is used to have user select which question they want to do.
+				(1)- Enter the height of a number of students and determine the average height and the number of student above/below.
+				(2)- Enter the price of the items in a shoppoing cart and calculate the total amount with 13% tax for each item.
+				(3)- Get the three telephone numbers of a contact based on the index input from keyboard. (contact list can be hard coded). 
+	
+	Things used:
+		>> loops (for, while and do-while)
+		>> conditionals (switch and if-then-else statements)
+		>> Variables (global, constant, array)
+			-->> array (single and multi-dimensional)
+		>> try-catch
+		>> sub-methods (void, returned and parameter)
+*/	
+
 import java.util.Scanner;
 import java.io.IOException;
 
