@@ -1,0 +1,82 @@
+﻿Question 1
+
+
+Make a class called Person with the following conditions:
+* Attributes:
+   * Name
+   * Age
+   * Id
+   * Weight
+   * Height.
+All attributes except the Id field will be default values ​​according to their type (0 for numbers, empty string for String, etc.).
+* Implement the following constructors:
+   * A default constructor.
+   * A constructor with the name and age, the rest by default.
+   * A constructor with all the attributes as parameters.
+* The methods that will be implemented are:
+   * isOver18(): indicates if it is of legal age, it returns a Boolean.
+   * checkName(): Check if the name is correct. It is correct if it contains only letters.
+   * toString(): returns all object information.
+   * generateID(): generates a random number of 8 digits. This method will be invoked automatically by the constructor when the object is built. You can split the method to make it easier for you.
+   * Setter of each attribute except ID. 
+
+
+Now, create an executable class that does the following:
+* Ask by keyboard the name, age, gender, weight and height. Create 3 Person objects that are identical. However, each instance of the person class should be created using a different constructor.
+   * The first object will use the default constructor and set all the attributes manually.
+   * The second object will use the construct that specifies the name, and age, but sets the rest of the attributes manually.
+   * The third object will set all the attributes by using the constructor that specifies every option.
+* For each object, check if the name is valid, and show a message. Also indicate for each object if the person is of legal age. Finally, display the information of each object. You can use methods in the executable class, to make it easier for you.
+   * All of the objects should have the exact same values if everything was done correctly.
+
+
+Sample output:
+
+
+Person 1 name is valid and is of legal age.
+Person 2 name is valid and is of legal age.
+Person 3 name is valid and is of legal age.
+Person 1 is Bob, ID 7392634, age is 40, weight is 81 kgs, height is 182 cm.
+Person 2 is Bob, ID 7392634, age is 40, weight is 81 kgs, height is 182 cm.
+Person 3 is Bob, ID 7392634, age is 40, weight is 81 kgs, height is 182 cm.
+
+
+
+
+Question 2:
+
+
+Create a class called Password with the following attributes:
+* Length
+   * By default, the length will be 8
+* Password
+The constructors will be as follows:
+* A default constructor
+* A constructor with the length that we send as parameter.
+Create the following methods:
+* isStrong(): return a boolean if it is strong or not.
+   * To be “strong”, a password must have at least 1 uppercase letter, one lower case letter, at least 1 number, and at least 1 symbol.
+* generatePassword(): Generates a random password of the the defined length.
+   * You will need to research how to generate random characters in Java
+   * The random characters will be from values 33-126 in the ASCII table
+* Get method for password and length.
+* Set method for length. 
+Now let’s create an executable class that does the following:
+* Prompt the user to enter in the length of the passwords to use.
+* Prompt the user to enter in the number of passwords to create.
+* Create an array of Passwords with the size that you indicate by keyboard.
+* Create a loop that creates an object for each position in the array and generates a password for each object.
+* Loop through the password array and show the password that was generated, and whether or not it is considered to be strong.
+
+
+Sample output:
+
+
+Please enter the number of character to use for each password: 10
+Please enter the number of passwords to create: 5
+The passwords that were created are:
+Password 1: “a8dH3uwal!” - Strong
+Password 2: “ayw6hai$%A” - Strong
+Password 3: “UWTluEe!ee” - Weak
+Password 4: “97RysaH#su” - Strong
+Password 5: “932%492A32” - Weak

@@ -1,0 +1,48 @@
+﻿1 - Write a program that allows you to enter the height of 10 students, then show the average height, and how many elements are above average, how many are below average.
+
+
+Example:
+
+
+        Enter the height for student 1: 180
+        Enter the height for student 2: 130
+        Enter the height for student 3: 155
+        Enter the height for student 4: 128
+        Enter the height for student 5: 192
+        Enter the height for student 6: 200
+        Enter the height for student 7: 135
+        Enter the height for student 8: 140
+        Enter the height for student 9: 125
+        Enter the height for student 10: 160
+        The average height is: 154.5
+        There are 5 students above the average height
+        There are 5 students below the average height
+
+
+2 - Write an algorithm that asks for the number of items in your shopping cart. The algorithm will then ask for the price of each item in your shopping cart. Finally, the algorithm will print out a list of all the prices in your shopping cart, but with a 13% tax applied to each item.
+
+
+Example:
+
+
+Please enter the number of items in your cart: 5
+Enter the price for item 1: $2
+Enter the price for item 2: $1
+Enter the price for item 3: $30
+Enter the price for item 4: $0
+Enter the price for item 5: $4
+The price with tax on item 1 is: $2.26
+The price with tax on item 2 is: $1.13
+The price with tax on item 3 is: $33.90
+The price with tax on item 4 is: $0
+The price with tax on item 5 is: $4.52
+
+
+3 - Write an algorithm that will store 3 phone numbers each for 5 different people. The phone numbers can be hard coded into your application. The application ask for which person’s contact information you would like to see. When you enter a number, the application will give you the phone numbers for that person.
+
+
+Example:
+        Please enter the index of the contact: 2
+        Contact 2, phone number 1:  204-555-555
+        Contact 2, phone number 2:  204-123-456
+        Contact 2, phone number 3:  204-999-9999
