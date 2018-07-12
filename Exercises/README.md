@@ -1,20 +1,21 @@
-# Class 11 - July 5, 2018
+# In Class Exercises
 
-## Agenda
+* Object Oriented Programming:
+  * Student Grade App
+    * [AverageGrade - main file](AverageGrade.java)
+    * [Student](Student.java)
+  * Library App
+    * [Library - main file](Library.java)
+    * [Book](Book.java)
 
-* Learn about Object Oriented Programming.
-  * https://drive.google.com/open?id=19kpHx7-CHolTwjBib2lN9QVqe58KEgNsHo88fjk6hCs
-* Examples from class:
-  * Average Grade Application
-    * [AverageGrade.java](AverageGrade.java)
-    * [Student.java](Student.java)
-  * Largest Book Application
-    * [Library.java](Library.java)
-    * [Book.java](Book.java)
+## Class 12
 
-Next class will be further learning about **Object Oriented Programming**
+* Book App - (Create, Loan, Return book)
+	* [Library main file](C12_InClassExer.java)
+	* [Book class](C12_Book.java)
 
-## Homework
+## Class 13
 
-1. Complete the following assignment in Java:
-  * (Not posted yet!)
+* Bicycle App
+	* [Bicycle main file](C13_InClassExer.java)
+	* [Bicycle class](Bicycle.java)
