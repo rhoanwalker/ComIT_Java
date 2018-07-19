@@ -1,30 +1,39 @@
-# In Class Exercises
+# Practice 8
+Develop a program that generates invoices for customers and purchase orders from suppliers.
 
-## Class 11
-* Object Oriented Programming:
-  * Student Grade App
-    * [AverageGrade - main file](AverageGrade.java)
-    * [Student](Student.java)
-  * Library App
-    * [Library - main file](Library.java)
-    * [Book](Book.java)
+The system displays a menu asking if you want to make an invoice or purchase order.
+  * In case of an invoice, the program asks for the client’s data
+  * In case of a purchase order, the program asks for the supplier’s data
+Then the program asks to enter up to 10 items (may be less) with description and its value
 
-## Class 12
+At the end, the program calculates the net total, GST, PST and finally shows on screen all the data of the invoice or purchase order. It displays one piece of data per line:
 
-* Book App - (Create, Loan, Return book)
-	* [Library main file](C12_InClassExer.java)
-	* [Book class](C12_Book.java)
+  * Invoice Number / Purchase Order Number
+  * Customer number / Supplier Number
+  * Customer name / Supplier Name
+    ————————
+  * Items with the value of each
+    ———————- 
+  * Net total
+  * GST
+  * PST
+  * Final total
 
-## Class 13
-Demos creating a array of an object (class), initializing, inserting and modifying value in array using function in a class
+## Solution
+* Classes
+  * Main Program:
+    * [Practice 8](Practice8App.java) - The class that implements the main method.
 
-* Bicycle App
-	* [Main file - Bicycle](C13_InClassExer.java)
-	* [Bicycle class](Bicycle.java)
+  * Customer Invoice:
+    * [Customer](Customer.java) - This class stores the customer and invoices object for the customer. A method used to add invoice
+    * [Invoice](Invoice.java) - Stores details of the customer invoice and items object.
 
-## Class 14
-Demos a class (Person) that implements a function that checks if two intances are equivalent.
+  * Supplier Purchase Order:
+    * [Supplier](Supplier.java) - Store the supplier and purchase order for the supplier. A method is used to add purchase order.
+    * [PurchaseOrder](PurchaseOrder.java) - Stores details of the supplier purchase order and items object.
 
-* Compare two instatnces of a object (class)
-  * [Object quivalence](C14_InClassExer.java)
-  * [Person.java](Person.java)
+  * Shared class:
+    * [Item](Item.java) - Both invoice and purchase order has a same requirements for what is stored/displayed. Item class used to modularize this.
+
+  * Functional class:
+    * [Taxes](Taxes.java) - Only implements functions to calculate tax amounts.
