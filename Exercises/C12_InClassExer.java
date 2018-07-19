@@ -4,10 +4,9 @@ import java.util.Scanner;
 
 public class C12_InClassExer
 {
-	static Scanner scInput = new Scanner(System.in);
-
 	public static void main(String[] args)
 	{
+		Scanner scInput = new Scanner(System.in);
 		int bookCount = 0;
 		int lastIdx = 0;
 		C12_Book[] books = new C12_Book[3];
@@ -22,12 +21,13 @@ public class C12_InClassExer
 					books[lastIdx] = CreateBook();
 					lastIdx++;
 					break;
-				case 2 :
-					C12_Book selectedBook = GetBookByIndex(books, lastIdx);
+				case 2 : // Take out a book
+
+					GetBookByIndex(books, lastIdx);
 					break;
-				case 3 :
+				case 3 : // Return a book
 					break;
-				case 4 :
+				case 4 : // list of all books
 					ListOfBooks(books, lastIdx);
 					break;
 				default:
@@ -47,7 +47,10 @@ public class C12_InClassExer
 	// Menu Option
 	public static int MenuOption()
 	{
-		System.out.println("Welcome to Class 6: Question 1 - 14 Exercises!");
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("\n***\n\n");
+		System.out.println("Welcome to Class 12: Book Exercises!");
 		System.out.println("______________________________________________\n");
 		System.out.println("0 - Quit");
 		System.out.println("1 - Create a book");
@@ -57,24 +60,25 @@ public class C12_InClassExer
 
 		System.out.print("\n\nPlease enter number for the selected option above: ");
 
-		return scInput.nextInt();
+		return sc.nextInt();
 	}
 
 	// Create Book
 	public static C12_Book CreateBook()
 	{
+		Scanner sc = new Scanner(System.in);
 		String bookName;
 		String bookAuthor;
 		int numCopies;
 
 		System.out.print("Please enter the name of the book: ");
-		bookName = scInput.nextLine();
+		bookName = sc.nextLine();
 
 		System.out.print("Please enter the author of the book: ");
-		bookAuthor = scInput.nextLine();
+		bookAuthor = sc.nextLine();
 
 		System.out.print("Please enter the number of copies: ");
-		numCopies = scInput.nextInt();
+		numCopies = sc.nextInt();
 
 		return new C12_Book(bookName, bookAuthor, numCopies);
 	}
@@ -101,20 +105,39 @@ public class C12_InClassExer
 
 		for(int i=0; i<lastIdx; i++)
 		{
-			System.out.println(books[i].toString() + " Index = " + i);
+			System.out.println("Book no. " + (i+1) + " - " + books[i].toString());
 		}		
 	}
 
-	// Get book to borrow or return
-	public C12_Book GetBookByIndex(C12_Book[] books, int nlastIdx)
+	// Get the index of the books in the available to be loaned
+	public static int GetBookByIndex(C12_Book[] books, int lastIdx)
 	{
+		Scanner sc = new Scanner(System.in);
+
 		int bookIdx;
-		ListOfBooks(books,nlastIdx);
+		ListOfBooks(books,lastIdx);
+		//C12_Book selectedBook = books[sc.nextInt() - 1];
 
-		System.out.println();
-		System.out.print("Please enter the index of the book: ");
-		bookIdx = scInput.nextInt();
+		do 
+		{
+			System.out.println();
+			System.out.print("Please enter the book no. to process: ");
+			bookIdx = sc.nextInt() - 1;
+		} while (!(bookIdx >= 0 && bookIdx < lastIdx));
 
-		return books[bookIdx];
-	}
+		/*
+			boolean isLoaned = selectedBook.Loan();
+
+			if (isLoaned)
+			{
+				System.out.println("Book " + selectedBook.getName() + " loaned successfully!");
+				System.out.println("There are " + selectedBook.getRemainingCopies() + " copies remaing to be loaned.");
+			}
+			else
+			{
+				System.out.println("Sorry, no books available to be loaned");
+			}
+		*/
+		return bookIdx;
+	} 
 }
