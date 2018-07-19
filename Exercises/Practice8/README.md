@@ -1,4 +1,5 @@
 # Practice 8
+## Exercise
 Develop a program that generates invoices for customers and purchase orders from suppliers.
 
 The system displays a menu asking if you want to make an invoice or purchase order.
@@ -11,9 +12,9 @@ At the end, the program calculates the net total, GST, PST and finally shows on 
   * Invoice Number / Purchase Order Number
   * Customer number / Supplier Number
   * Customer name / Supplier Name
-    ————————
-  * Items with the value of each
-    ———————- 
+  _____________________________
+  Items with the value of each
+  _____________________________ 
   * Net total
   * GST
   * PST
