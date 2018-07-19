@@ -12,9 +12,9 @@ At the end, the program calculates the net total, GST, PST and finally shows on 
   * Invoice Number / Purchase Order Number
   * Customer number / Supplier Number
   * Customer name / Supplier Name
-  _____________________________
+  ___
   Items with the value of each
-  _____________________________ 
+  ___
   * Net total
   * GST
   * PST
